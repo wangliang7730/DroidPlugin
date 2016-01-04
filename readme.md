@@ -1,6 +1,14 @@
 Droid Plugin
 ======
 
+纵览了前面的所有插件化技术，你会发现，它们都是基于单进程的。这就是说，插件更新只能等到App重新启动才能生效。
+
+但是我们的用户大都是不懂得如何重启App的。这就导致了插件升级后的更新率并不高，两周时间也就50%的升级率，然后App就又发大版本了。
+
+对于这个问题，360推出了DroidPlugin的插件化技术，它是基于多进程的思想。比如说一个App中有吃喝玩乐4个插件，如果“吃”这个插件有升级，DroidPlugin就可以把正在运行的“吃”的旧版本的这个进程杀掉，然后运行新的插件版本。
+
+目前看起来，对于电商、O2O、OTA这样多业务线、并偏重于闭环的App而言，DroidPlugin是一个终极解决方案
+
 [中文文档](readme_cn.md "中文文档")
 
 DroidPlugin is a new **Plugin Framework** developed and maintained by the Android app-store team at Qihoo 360 (NYSE:QIHU).
